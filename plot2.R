@@ -12,7 +12,7 @@ df$Date <- strptime(df$Date,"%d/%m/%Y")
 
 ## Draw the plot picture
 par(mfrow = c(1,1))
-with(df, plot(Time, Global_active_power, type = "l", col = "black", xlab = "", ylab = "Global Active Power(in kilowatt)"))
+with(df, plot(Time, Global_active_power, type = "l", col = "black", xlab = "", ylab = "Global Active Power(in kilowatts)"))
 
 ## Save the plot as a png file
 dev.copy(png, file = 'plot2.png')

@@ -12,7 +12,7 @@ df$Date <- strptime(df$Date,"%d/%m/%Y")
 
 ## Draw the hist picture
 par(mfrow = c(1,1))
-hist(df$Global_active_power, col= "red", xlab = "Global Active Power(in kilowatt)", ylab = "Frequency", main = "Global Active Power")
+hist(df$Global_active_power, col= "red", xlab = "Global Active Power(in kilowatts)", ylab = "Frequency", main = "Global Active Power")
 
 ## Save the hist as a png file
 dev.copy(png, file = 'plot1.png')
